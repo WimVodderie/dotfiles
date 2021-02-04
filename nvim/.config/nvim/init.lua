@@ -14,23 +14,14 @@ paq {'savq/paq-nvim', opt=true}
 
 
 -- THEME
--- gruvbox colors
-paq 'gruvbox-community/gruvbox'
-vim.g.gruvbox_italic = 1
-vim.g.gruvbox_improved_strings = 1
-vim.g.gruvbox_improved_warnings = 1
-vim.g.gruvbox_contrast_light = 'hard'
-vim.g.gruvbox_contrast_dark = 'medium'
-vim.cmd [[colorscheme gruvbox]]
+paq 'bluz71/vim-moonfly-colors'
+vim.cmd [[colorscheme moonfly]]
 -- statusline
 paq 'itchyny/lightline.vim'
 vim.g.lightline = {
-  colorscheme = 'gruvbox'
+  colorscheme = 'moonfly'
 }
 vim.o.showmode = false
-if os.getenv('termTheme') == 'light' then
-  vim.o.background = 'light'
-end
 
 
 -- UI
